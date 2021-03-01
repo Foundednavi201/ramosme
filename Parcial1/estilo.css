@@ -1,0 +1,36 @@
+h1
+{
+    text-align: center;
+    font-family: Georgia;
+    font-size: larger;
+    font-style: italic;
+    background-color:rgba(92, 13, 2, 0.692);
+}
+figure
+{
+    text-align: center;
+    background-color: rgb(100, 20, 0);
+}
+h2
+{
+    text-align:center;
+    color: white;
+}
+h3
+{
+    text-align: Center;
+}
+table
+{
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+body
+{
+    background-color:lightgray;
+}
+ul
+{
+    text-align: center;
+}

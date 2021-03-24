@@ -1,0 +1,39 @@
+body
+{
+    background-color: rgb(71, 71, 71) ;
+}
+
+.container
+{
+    color: white;
+}
+
+.Fecha 
+{
+    color: white;
+    background-color: rgb(102, 18, 18);
+}
+
+.form-control
+{
+    background-color: rgb(102, 18, 18);
+    color: white;
+}
+
+.btnEnviar
+{
+    background-color: red;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: teal;
+}
+
+figure
+{
+    text-align: center;
+    margin-bottom: 50px;
+}

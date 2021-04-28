@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+img
+{
+  width: 1920px;
+  height: 933px;
+}
+
+@media screen and (max-width:768px,)
+{
+    .img
+    {
+      width: auto;
+      height: auto;
+    }
+}
+
 body{
   min-height: 100vh;
   background-color: rgb(46, 45, 45);

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function()
+      {
+        $("form").submit(function(event)
+        {
+          var uname = $("#form_uname").val();
+          var pssw = $("#form_pssw").val();
+
+          if(uname !== '' & pssw !== '')
+          {
+            if(uname !== "Ivan" && pssw !== "18100219")
+            {
+              alert("Usuario o contraseña incorrectos, intente de nuevo");
+            }
+            else
+            {
+              alert("Ha iniciado sesion correctamente como " + uname);
+            }
+          }
+          else
+          {
+            alert("No deje ningún espacio en blanco. Intente de nuevo");
+          }
+        })
+      })
+    </script>
+  </head>
+  <body>
+
+      <form action="index.html" class="login-form">
+        <h1>Iniciar Sesión</h1>
+
+        <div class="txtb">
+          <input type="text" id="form_uname">
+          <span data-placeholder="Usuario"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password" id="form_pssw">
+          <span data-placeholder="Contraseña"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Iniciar sesión">
+
+        <div class="bottom-text">
+          <p>Aún no estás registrado? <a href="#">Regístrate</a></p>
+          <br><br>
+
+          <span>O inicia sesión con:</span>
+        </div>
+
+        <div class="social-icons">
+
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+  </body>
+</html>

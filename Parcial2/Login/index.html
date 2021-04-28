@@ -2,21 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css"><!--Referencia a la hoja de estilo-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script><!--CDN de JQuery-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script><!--Script para los símbolos de las redes sociales-->
 
     <script>
     $(document).ready(function()
       {
+        //Detecta cuando se pulsa el botón iniciar sesión
         $("form").submit(function(event)
         {
+          //variables donde se guardan los valores del nombre de usuario y la contraseña ingresadas en el form
           var uname = $("#form_uname").val();
           var pssw = $("#form_pssw").val();
 
+          //Se valida que ni el campo usuario ni el campo contraseña se queden en blanco
           if(uname !== '' & pssw !== '')
           {
+            //Se valida que el nombre de usuario sea "Ivan" y la contraseña sea "18100219"
             if(uname !== "Ivan" && pssw !== "18100219")
             {
               alert("Usuario o contraseña incorrectos, intente de nuevo");

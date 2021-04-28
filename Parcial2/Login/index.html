@@ -43,18 +43,21 @@
       <form action="index.html" class="login-form">
         <h1>Iniciar Sesión</h1>
 
+        <!-- Campo nombre de usuario -->
         <div class="txtb">
           <input type="text" id="form_uname">
           <span data-placeholder="Usuario"></span>
         </div>
-
+        <!-- Campo contraseña -->
         <div class="txtb">
           <input type="password" id="form_pssw">
           <span data-placeholder="Contraseña"></span>
         </div>
 
+        <!-- Botón iniciar sesión -->
         <input type="submit" class="logbtn" value="Iniciar sesión">
 
+        <!-- Sección registrarse -->
         <div class="bottom-text">
           <p>Aún no estás registrado? <a href="#">Regístrate</a></p>
           <br><br>
@@ -62,6 +65,7 @@
           <span>O inicia sesión con:</span>
         </div>
 
+        <!-- Íconos de redes sociales -->
         <div class="social-icons">
 
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -72,10 +76,13 @@
 
       </form>
 
+      <!-- Esta función eleva el texto de "Usuario" y "Contraseña" cuando están activos 
+           y el segundo baja el texto cuando el campo deja de estar activo -->
       <script type="text/javascript">
       $(".txtb input").on("focus",function(){
         $(this).addClass("focus");
       });
+
 
       $(".txtb input").on("blur",function(){
         if($(this).val() == "")

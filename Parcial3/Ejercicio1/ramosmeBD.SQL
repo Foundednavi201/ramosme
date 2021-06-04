@@ -3,7 +3,7 @@ CREATE DATABASE ramosme;
 USE ramosme;
 
 CREATE TABLE Productos(
-    IDProducto INT NOT NULL AUTO_INCREMENT,
+    IDProducto TINYINT NOT NULL AUTO_INCREMENT,
     Nombre VARCHAR(25) NOT NULL,
     Cantidad INT NOT NULL,
     Precio DECIMAL NOT NULL,

@@ -1,0 +1,39 @@
+h1
+{
+    text-align: center;
+    color: rgb(244, 248, 247);
+}
+
+body{
+    background-image: url(img/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Bienvenida{
+    width: 360px;
+    background: rgb(49, 48, 48);
+    height: 400px;
+    padding: 80px 40px;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btnContinuar
+{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: black;
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}

@@ -8,7 +8,7 @@
     <title>Bienvenida</title>
 </head>
 <body>
-    <form action="bdABC.php" class="Bienvenida" method="post">
+    <form action="BDCRUD.php" class="Bienvenida" method="post">
         <h1>Bienvenido !!!</h1>
         <br>
         <br>

@@ -19,10 +19,10 @@
         <?php
           $conn = mysqli_connect('localhost','root','I18100219','ramosme');
           if(isset($_GET['edit'])){
-              $edit_nom = $_GET['edit'];
+              $IDprod = $_GET['edit'];
           }
 
-          $select = "SELECT * FROM Productos WHERE Nombre='$edit_nom'";
+          $select = "SELECT * FROM Productos WHERE IDProducto='$IDprod'";
           $run = mysqli_query($conn,$select);
           $row_producto = mysqli_fetch_array($run);
           
@@ -57,7 +57,7 @@
         <!-- Botón confirmar edición -->
         <input type="submit" class="logbtn" value="Confirmar" name="btnConfirmar">
         <br>
-        <a class="btn btn-success" href="bdABC.php">Revisar BD</a><a class="btn btn-success" href="EditProd.php?edit=<?php echo $edit_nom;?>">Reiniciar datos</a>
+        <a class="btn btn-success" href="BDCRUD.php">Revisar BD</a>  <a class="btn btn-success" href="EditProd.php?edit=<?php echo $IDprod;?>">Reiniciar datos</a>
       </form>
 
       <?php
@@ -70,7 +70,7 @@
             $Precio_ProductoED = $_POST['precio'];
 
             $update = "UPDATE Productos SET Nombre='$Nombre_ProductoED',Cantidad='$Cantidad_ProductoED',Precio='$Precio_ProductoED'
-            WHERE Nombre='$edit_nom'";
+            WHERE IDProducto='$IDprod'";
 
             $run_update = mysqli_query($conn,$update);
             if($run_update == true)

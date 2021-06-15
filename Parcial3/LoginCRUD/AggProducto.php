@@ -16,18 +16,18 @@
         <h1>Agregar un producto</h1>
       </div>
 
-      
-        <!-- Campo nombre de usuario -->
+        <!-- Campo nombre del producto -->
         <div class="txtb">
           <input type="text" id="form_NomProd" name="NomProd">
           <span data-placeholder="Nombre del producto"></span>
         </div>
-        <!-- Campo contraseña -->
+        <!-- Campo cantidad -->
         <div class="txtb">
           <input type="txtb" id="form_cant" name="cant">
           <span data-placeholder="Cantidad"></span>
         </div>
 
+        <!-- Campo precio -->
         <div class="txtb">
           <input type="txtb" id="form_Precio" name="precio">
           <span data-placeholder="Precio"></span>
@@ -36,9 +36,8 @@
         <!-- Botón Agregar -->
         <input type="submit" class="logbtn" value="Agregar" name="btnAgg">
         <br>
-        <a class="btn btn-success" href="bdABC.php">Revisar BD</a>
+        <a class="btn btn-success" href="BDCRUD.php">Revisar BD</a>
       </form>
-
 
       <?php
         $conn = mysqli_connect('localhost','root','I18100219','ramosme');
